@@ -1,12 +1,19 @@
-class Person:
-  def __init__(self, fname, lname):
-    self.firstname = fname
-    self.lastname = lname
+public class PositiveNegative {
 
-  def printname(self):
-    print(self.firstname, self.lastname)
+    public static void main(String[] args) {
 
-#Use the Person class to create an object, and then execute the printname method:
+        double number = 12.3;
 
-x = Person("John", "Doe")
-x.printname()
+        // true if number is less than 0
+        if (number < 0.0)
+            System.out.println(number + " is a negative number.");
+
+        // true if number is greater than 0
+        else if ( number > 0.0)
+            System.out.println(number + " is a positive number.");
+
+        // if both test expression is evaluated to false
+        else
+            System.out.println(number + " is 0.");
+    }
+}
